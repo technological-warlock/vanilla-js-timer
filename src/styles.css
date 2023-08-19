@@ -1,0 +1,92 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Share+Tech+Mono&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+:root {
+  --background: black;
+  --text: #66ff00;
+  --border: 2px;
+  --border-radius: 1rem;
+  --card-border: #66ff00;
+  --button-border: #66ff00;
+  --button-back: black;
+  --button-front: #66ff00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+button {
+  display: block;
+  cursor: pointer;
+  font-family: "Courier New", consolas, monospace;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.container {
+  max-width: 60ch;
+  /* margin: 0 auto; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+#timers {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#timers li {
+  display: block;
+  border: var(--border) solid var(--card-border);
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+button {
+  padding: 1rem;
+  border: var(--border) solid var(--button-border);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--button-back);
+  color: var(--button-front);
+}
+
+.timer-buttons {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 0.5rem;
+}
+
+.clock {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Courier Prime";
+}
